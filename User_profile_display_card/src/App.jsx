@@ -56,25 +56,3 @@ function App() {
 }
 
 export default App
-
-
-
-
-//     <img src=
-//       alt="nodejs"/> 
-//   </a>
-//   <a href="https://expressjs.com" target="_blank">
-//     <img src=
-//       alt="express" />
-// </p>
-// <h3 align="center">Database</h3>
-// <p align="center">
-//   <a href="https://redis.io" target="_blank"> 
-//     <img src=
-//       alt="redis"/>
-//   </a>
-//   <a href="https://www.mongodb.com/" target="_blank"> 
-//     <img src=
-//       alt="mongodb"/> 
-//   </a> 
-// </p>
