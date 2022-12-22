@@ -19,7 +19,7 @@ export default function Todolist({ dateTime,item, status, id, handleStatus, hand
         <div style={style}>
       <div>
         <h3>
-          {item}-{status ? "done" : "Not done"}
+          {item}    -    {status ? "done" : "Not done"}
         </h3>
       </div>
       <div>
