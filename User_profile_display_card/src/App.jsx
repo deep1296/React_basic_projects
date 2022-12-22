@@ -23,7 +23,7 @@ function App() {
       id :"2",
       name : "Albert",
       designation:"React developer",
-      avatar : "https://avatars.githubusercontent.com/u/1024025?v=4",
+      avatar : "https://avatars.githubusercontent.com/u/12158859?v=4",
       skills : [
       "https://img.shields.io/badge/reactjs-61DAFB.svg?style=for-the-badge&logo=react&logoColor=black",
       "https://img.shields.io/badge/redux-764ABC.svg?style=for-the-badge&logo=redux&logoColor=white",

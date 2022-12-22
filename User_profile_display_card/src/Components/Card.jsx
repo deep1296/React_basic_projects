@@ -1,45 +1,37 @@
 import Button from "./Button";
+import "./components.css";
 
 export default function Card(props) {
     // console.log(props);
     const {name,designation,avatar,skills} = props;
-    const style = {
-        display: 'flex',
-        gap:"20px",
-        padding:"1rem",
-        border: "1 px solid red",
-        width: "90%",
-        height: "200px"
-    }
-    const image = {
-        width: "100px",
-        height : "100px",
-        borderRadius: "50%"
-    }
+ 
     
   return (
     <>
-      <div id="container" style={style}>
+      <div id="container" >
         <div id="details">
           <div id="name&Designation">
-            <span>{name}</span>
+            <span id="name">{name}</span>
             <Button
               text="Follow !"
               style={{
                 backgroundColor: "black",
                 color: "white",
-                padding: "0.5rem",
+                padding: "10px",
                 width: "80px",
+                float  :"center",
+                borderRadius:"10%"
               }}
             />
-            <h3>{designation}</h3>
+            <br />
+            <h3>{designation}</h3><br />
           </div>
           <div id="skills">{skills.map((ele)=>(
             <img src={ele} alt="icon" />
           ))}</div>
         </div>
         <div id="avtar">
-            <img src={avatar} alt="avatar" style={image}/>
+            <img id="image" src={avatar} alt="avatar"/>
         </div>
       </div>
     </>
