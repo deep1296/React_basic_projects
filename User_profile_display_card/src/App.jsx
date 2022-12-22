@@ -8,7 +8,7 @@ function App() {
   const users = [
     {
       id :"1",
-      name : "John wick",
+      name : "Linus Torvalds",
       designation:"Software developer",
       avatar : "https://avatars.githubusercontent.com/u/1024025?v=4",
       skills : [
