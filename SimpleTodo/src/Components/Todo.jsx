@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Addtodo from "./Addtodo";
-import Todolist from "./Todolist";
+import AddTodo from "./AddTodo";
+import TodoList from "./TodoList";
 
 export default function Todo() {
   const [todo, setTodo] = useState([]);
