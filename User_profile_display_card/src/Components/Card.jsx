@@ -27,7 +27,7 @@ export default function Card(props) {
             <h3>{designation}</h3><br />
           </div>
           <div id="skills">{skills.map((ele)=>(
-            <img src={ele} alt="icon" />
+            <img src={ele} key = {ele} alt="icon" />
           ))}</div>
         </div>
         <div id="avtar">
