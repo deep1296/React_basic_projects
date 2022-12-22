@@ -9,17 +9,25 @@ export default function Todo() {
     const payload = {
       title: text,
       id: new Date().toDateString() + text,
-      status: false
+      status: false,
+      date : new Date().toLocaleString()
     };
     setTodo([...todo, payload]);
   };
-
+  console.log(todo);
   const handleStatus = (id) => {
     todo.forEach((ele) => {
       ele.id === id && (ele.status = !ele.status);
     });
     setTodo([...todo]);
   };
+
+  const handleDelete = (id) => {
+    const arr = todo.filter((item)=>(
+        item.id !== id
+    ))
+    setTodo(arr)
+  }
 
   return (
     <div>
@@ -30,7 +38,9 @@ export default function Todo() {
           item={ele.title}
           status={ele.status}
           id={ele.id}
+          dateTime={ele.date}
           handleStatus={handleStatus}
+          handleDelete = {handleDelete}
         />
       ))}
     </div>
