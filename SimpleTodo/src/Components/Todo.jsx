@@ -23,9 +23,9 @@ export default function Todo() {
 
   return (
     <div>
-      <Addtodo handleAdd={handleAdd} />
+      <AddTodo handleAdd={handleAdd} />
       {todo.map((ele) => (
-        <Todolist
+        <TodoList
           key={ele.id}
           item={ele.title}
           status={ele.status}
