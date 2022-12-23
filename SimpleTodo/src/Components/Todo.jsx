@@ -20,18 +20,7 @@ export default function Todo() {
     //   ele.id === id && (ele.status = !ele.status);
     // });
 
-    const newTodo = todo.map((ele)=>{
-      if(ele.id === id) {
-        return{
-          ...ele,
-          status : !ele.status
-        }
-
-      }
-      else{
-        return ele;
-      }
-    })
+    const newTodo = todo.map((ele)=> ( ele.id === id ? {...ele,status:!ele.status} : ele))
     setTodo(newTodo);
   };
 
