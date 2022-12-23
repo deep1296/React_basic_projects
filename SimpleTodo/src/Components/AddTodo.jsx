@@ -7,17 +7,20 @@ export default function AddTodo({ handleAdd }) {
   };
 
   const onClick = () => {
-    handleAdd(text);
+    !text ? alert("Please enter a text") :  handleAdd(text);
+    
     setText("");
   };
 
   return (
     <div>
       <input
+        required 
         placeholder="Enter todo"
         onChange={handlechange}
         type="text"
         value={text}
+        
       />
       <button onClick={onClick}>Add</button>
     </div>
