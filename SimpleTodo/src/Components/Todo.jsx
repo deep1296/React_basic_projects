@@ -16,10 +16,23 @@ export default function Todo() {
   };
   console.log(todo);
   const handleStatus = (id) => {
-    todo.forEach((ele) => {
-      ele.id === id && (ele.status = !ele.status);
-    });
-    setTodo([...todo]);
+    // todo.forEach((ele) => {
+    //   ele.id === id && (ele.status = !ele.status);
+    // });
+
+    const newTodo = todo.map((ele)=>{
+      if(ele.id === id) {
+        return{
+          ...ele,
+          status : !ele.status
+        }
+
+      }
+      else{
+        return ele;
+      }
+    })
+    setTodo(newTodo);
   };
 
   const handleDelete = (id) => {
