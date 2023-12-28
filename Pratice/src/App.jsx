@@ -7,7 +7,7 @@ function App() {
 
   const fetchData = function () {
     axios
-      .get("https://backend-basics-rz1f.onrender.com/deepInfor")
+      .get("/api/deepInfor")
       .then((res) => {
         setData(res.data);
       })
